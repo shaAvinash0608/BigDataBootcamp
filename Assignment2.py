@@ -156,3 +156,170 @@
 
 #Ans Q-75: You can loop through a dictionary by using a for loop. When looping through a dictionary, the return value are the keys of the dictionary, but there are methods to return the values as well.
 #          Loop through both keys and values, by using the items() function.
+
+'''Ans Q-76: def factorial(x):
+             if x == 1:
+               return 1
+             else:
+               return (x * factorial(x-1))
+             num = 7
+             result = factorial(num)
+             print("The factorial of", num, "is", result)'''
+
+'''Ans Q-77: def simple_interest(p,t,r):
+    print('The principal is', p)
+    print('The time period is', t)
+    print('The rate of interest is',r)
+    si = (p * t * r)/100
+    print('The Simple Interest is', si)
+    return si
+     
+simple_interest(8, 6, 8)  '''
+
+'''Ans Q-78: def compound_interest(principle, rate, time):
+               Amount = principle * (pow((1 + rate / 100), time))
+               CI = Amount - principle
+               print("Compound interest is", CI)
+
+compound_interest(10000, 10.25, 5)'''
+
+'''Ans Q-79: num = 11
+if num > 1:
+    for i in range(2, int(num/2)+1):
+        if (num % i) == 0:
+            print(num, "is not a prime number")
+            break
+    else:
+        print(num, "is a prime number")
+else:
+    print(num, "is not a prime number")'''
+
+'''Ans Q-80: num = 1634
+             order = len(str(num))
+             sum = 0
+             temp = num
+            while temp > 0:
+               digit = temp % 10
+               sum += digit ** order
+               temp //= 10
+            if num == sum:
+              print(num,"is an Armstrong number")
+            else:
+              print(num,"is not an Armstrong number")   '''
+
+'''Ans Q-81: def Fibonacci(n):
+                if n<= 0:
+                  print("Incorrect input")
+                elif n == 1:
+                  return 0
+                elif n == 2:
+                  return 1
+                else:
+                  return Fibonacci(n-1)+Fibonacci(n-2)
+ 
+print(Fibonacci(10))   '''
+
+
+'''Ans Q-82: def swapList(newList):
+                 size = len(newList)
+                 temp = newList[0]
+                 newList[0] = newList[size - 1]
+                 newList[size - 1] = temp
+     
+                 return newList
+
+newList = [12, 35, 9, 56, 24]
+print(swapList(newList)) '''
+
+'''Ans Q-83: def swapPositions(list, pos1, pos2):
+                 list[pos1], list[pos2] = list[pos2], list[pos1]
+                 return list
+ 
+List = [23, 65, 19, 90]
+pos1, pos2  = 1, 3
+print(swapPositions(List, pos1-1, pos2-1)) '''
+
+'''Ans Q-84: def Nmaxelements(list1, N):
+                final_list = []
+                for i in range(0, N):
+                    max1 = 0
+         
+                    for j in range(len(list1)):    
+                        if list1[j] > max1:
+                        max1 = list1[j];
+                        list1.remove(max1);
+                        final_list.append(max1)
+                print(final_list)
+             list1 = [2, 6, 41, 85, 0, 3, 7, 6, 10]
+             N = 2
+Nmaxelements(list1, N) '''
+
+'''Ans Q-85: def Cumulative(lists):
+                cu_list = []
+                length = len(lists)
+                cu_list = [sum(lists[0:x:1]) for x in range(0, length+1)]
+                eturn cu_list[1:]
+
+lists = [10, 20, 30, 40, 50]
+print (Cumulative(lists)) '''
+
+
+'''Ans Q-86: def isPalindrome(s):
+                return s == s[::-1]
+
+            s = "malayalam"
+            ans = isPalindrome(s)
+ 
+            if ans:
+                print("Yes")
+            else:
+                print("No") '''
+
+'''Ans Q-87: def remove(string, i): 
+                for j in range(len(string)):
+                    if j == i:
+                    string = string.replace(string[i], "", 1)
+                return string
+      
+if __name__ == '__main__':
+    string = "geeksFORgeeks"
+    i = 5
+print(remove(string, i))    '''
+
+
+'''Ans Q-88: string = "geeks for geeks"  # or string=input() -> taking input from the user
+             substring = "geeks"  # or substring=input()
+             s = string.split()
+             if substring in s:
+                print("yes")
+             else:
+                print("no") '''
+
+'''Ans Q-89: sentence = "hello iNeoroun is computer science portal"
+             length = 4
+             print([word for word in sentence.split() if len(word) > length])   '''
+
+'''Ans Q-90: my_dict = {'hi' : [5,3,8, 0],
+   'there' : [22, 51, 63, 77],
+   'how' : [7, 0, 22],
+   'are' : [12, 11, 45],
+   'you' : [56, 31, 89, 90]}
+
+             print("The dictionary is : ")
+             print(my_dict)
+
+             my_result = list(sorted({elem for val in my_dict.values() for elem in val}))
+
+             print("The unique values are : ")
+             print(my_result)     '''
+
+
+'''Ans Q-91: dict_1 = {1: 'a', 2: 'b'}
+             dict_2 = {2: 'c', 4: 'd'}
+
+             print(dict_1 | dict_2)      '''
+             
+                                         
+
+
+
