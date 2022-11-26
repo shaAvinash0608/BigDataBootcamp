@@ -320,6 +320,93 @@ print(remove(string, i))    '''
              print(dict_1 | dict_2)      '''
              
                                          
+'''Ans Q-92: def Convert(tup, di):
+                for a, b in tup:
+                di.setdefault(a, []).append(b)
+                return di
+      
+             tups = [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
+             dictionary = {}
+             print (Convert(tups, dictionary)) Output => {'Sachin': 10, 'MSD': 7, 'Kohli': 18, 'Rohit': 45} '''
+
+
+'''Ans Q-93: list = [9, 5, 6]
+             res = [(val, pow(val, 3)) for val in list]              
+             print(res) Output => [(9, 729), (5, 125), (6, 216)] '''
+
+
+'''Ans Q-94: test_tuple1 = (7, 2), test_tuple2 = (7, 8)
+             res =  [(a, b) for a in test_tuple1 for b in test_tuple2]
+             res = res +  [(a, b) for a in test_tuple2 for b in test_tuple1]  
+             print("The combine tuple : " + str(res)) Output => [(7, 7), (7, 8), (2, 7), (2, 8), (7, 7), (7, 2), (8, 7), (8, 2)] '''
+
+
+'''Ans Q-95: def Sort_Tuple(tup):  
+               tup.sort(key = lambda x: x[1])
+               return tup
+
+              tup = [('for', 24), ('Geeks', 8), ('Geeks', 30)]
+              print(Sort_Tuple(tup)) '''
+
+
+'''Ans Q-96: def pypart(n):
+                for i in range(0, n):
+                  for j in range(0, i+1):
+                    print("* ",end="")
+                  print("\r")
+
+             n = 5
+             pypart(n) '''
+
+
+'''Ans Q-97: n=5;i=0
+             while(i<=n):
+             print(" " * (n - i) +"*" * i)
+             i+=1   '''
+
+
+'''Ans Q-98: def triangle(n):
+                k = n - 1
+                for i in range(0, n):
+                  for j in range(0, k):
+                    print(end=" ")
+
+                  k = k - 1
+                  for j in range(0, i+1):
+                    print("* ", end="")
+
+                  print("\r")
+
+
+             n = 5
+             triangle(n) '''
+
+
+'''Ans Q-99: def numpat(n):
+                num = 1
+                for i in range(0, n):
+                  num = 1
+                  for j in range(0, i+1):
+                    print(num, end=" ")
+                    num = num + 1
+                  print("\r")
+
+             n = 5
+             numpat(n)     '''
+
+
+'''Ans Q-100: def alphapat(n):
+                num = 65
+                for i in range(0, n):
+                  for j in range(0, i+1):
+                    ch = chr(num)
+                    print(ch, end=" ")
+                  num = num + 1
+                  print("\r")
+
+              n = 5
+              alphapat(n)  '''                                
+
 
 
 
