@@ -43,5 +43,32 @@
 ''' Ans Q14 - Use sort_values to sort the df by a specific column's values stntex :- df.sort_values('column_name'). '''
 
 ''' Ans Q15 - The copy() method returns a copy of the DataFrame.
+              By default, the copy is a "deep copy" meaning that any changes made in the original DataFrame will NOT be reflected in the copy.  '''
 
-By default, the copy is a "deep copy" meaning that any changes made in the original DataFrame will NOT be reflected in the copy.
+
+''' Ans Q16 - The loc function in pandas can be used to access groups of rows or columns by label.
+              Add each condition you want to be included in the filtered result and concatenate them with the & operator .
+              Syntex :- dataFrame.loc[(dataFrame['column_name']>=100000) & (dataFrame['column_name']< 40) & (dataFrame['column_name'].str.startswith('D')),
+                    ['column_name','JOB']]  '''
+
+''' Ans Q17 - To get column average or mean from pandas DataFrame use either mean() and describe() method. The DataFrame. mean() method is used to return the mean of the values for the requested axis.   '''
+
+''' Ans Q18 - Standard deviation is calculated using the function . std() . However, the Pandas library creates the Dataframe object and then the function . std() is applied on that Dataframe .   '''
+
+''' Ans Q19 - By using corr() function we can get the correlation between two columns in the dataframe.
+              Syntex :- dataframe[‘first_column’].corr(dataframe[‘second_column’]). '''
+
+
+''' Ans Q20 - The most basic way to select a single column from a dataframe, just put the string name of the column in brackets.     '''
+
+''' Ans Q21 - If you'd like to select rows based on integer indexing, you can use the . iloc function. If you'd like to select rows based on label indexing, you can use the . loc function. '''
+
+''' Ans Q22 - To sort the DataFrame based on the values in a single column, you'll use . sort_values() . By default, this will return a new DataFrame sorted in ascending order. It does not modify the original DataFrame. '''
+
+''' Ans Q23 - you can  create a new column in a DataFrame based on the values of another column using apply() method .  '''
+
+''' Ans Q24 - The drop_duplicates() method removes duplicate rows. Use the subset parameter if only some specified columns should be considered when looking for duplicates.  '''
+
+''' Ans Q25 - The main distinction between loc and iloc is: loc is label-based, which means that you have to specify rows and columns based on their row and column labels. 
+              iloc is integer position-based, so you have to specify rows and columns by their integer position values (0-based integer position).  '''
+
